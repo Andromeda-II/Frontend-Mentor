@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: Inter-variable;
+      src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+      font-weight: normal;
+    }
+    :root{
+      --cor0: hsl(0, 0%, 20%);
+      --cor1: hsl(0, 0%, 12%);
+      --cor2: hsl(0, 0%, 8%);
+      --cor3: hsl(75, 94%, 57%);
+      --cor4: hsl(0, 0%, 100%);
+
+      --fonte-padrao:'Inter-variable';
+    }
+    body{
+      font-size: 14px;
+      position: relative;
+      background-color: var(--cor2);
+      font-family: var(--fonte-padrao);
+      color: var(--cor4);
+      padding: 10px;
+      height: 98vh;
+    }
+    #header{
+      width: 300px;
+      position: absolute;
+      background-color: var(--cor1);
+      top: 50%;
+      left: 50%;
+      border-radius: 15px;
+      padding: 60px;
+      padding-bottom: 20px;
+
+      transform: translate(-50%, -50%);
+      text-align: center;
+     
+    }
+    p{
+      color: var(--cor3);
+    }
+    .fotinha{
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+    }
+    .button{
+      margin: 20px;
+      background-color: var(--cor0);
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      
+
+    }
+    .button:hover{
+      background-color: var(--cor3);
+      color: black;
+    }
+    
+  </style>
+</head>
+<body>
+
+
+  <div id="header">
+    <img src="assets/images/avatar-jessica.jpeg" alt="avatar-jessica.jpeg" class="fotinha">
+    <h2>Jessica Randall</h2>
+    <h4>London, United Kingdom</h4>
+    <p>"Front-end developer and avid reader."</p>
+  
+
+  <div class="button">GitHub</div>
+  <div class="button">Frontend Mentor</div>
+  <div class="button">Twitter</div>
+  <div class="button">Instagram</div>
+  </div>
+</body>
+</html>
